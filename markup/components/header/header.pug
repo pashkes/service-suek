@@ -1,0 +1,27 @@
+mixin header(data)
+  header.header
+    .header__top
+      .container
+        .header__top-inner
+          nav.header__navigation
+            button(type="button" aria-expanded="false" aria-haspopup="true" aria-label="Открыть меню").header__burger.js-show-menu
+            div.header__dropdown#menu
+              .header__dropdown-block
+                .header__wrapper
+                  button(type="button" aria-label="закрыть").header__close.close-btn.js-close-menu
+                  ul.header__menu
+                    li.header__item
+                      a(href="#plants").header__link.js-scrollTo заводы
+                    li.header__item
+                      a(href="#products").header__link.js-scrollTo продукция
+                    li.header__item
+                      a(href="#services").header__link.js-scrollTo услуги
+                  button(type="button" data-toggle="modal" data-target="#order-modal").header__dropdown-order.button отправить заявку
+          button(type="button" data-toggle="modal" data-target="#order-modal").header__order.button отправить заявку
+    .header__text
+      .container
+        h1.header__title Мы&nbsp;обеспечим надежность вашего бизнеса!
+        .header__lead
+          p Сервисные предприятия СУЭК&nbsp;&mdash; Ваш компетентный партнер:
+          p &mdash;&nbsp;по&nbsp;поставке машин, компонентов, запасных частей и&nbsp;расходных материалов к&nbsp;различному оборудованию
+          p &mdash;&nbsp;по&nbsp;выполнению ремонтов большого спектра оборудования и&nbsp;оказанию&nbsp;иных услуг

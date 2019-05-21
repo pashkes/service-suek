@@ -1,0 +1,16 @@
+mixin order-success-modal(data)
+    .modal.modal--order-success.fade(tabindex='-1' role='dialog' aria-labelledby='order-title-success' aria-hidden='true' id="order-success-modal")
+      .modal-dialog(role='document')
+        .modal__content.modal-content
+          .modal__header
+            button.modal__close.close-btn(type='button', data-dismiss='modal' aria-label="Закрыть")
+          .modal__body
+            span#order-title-success.modal__title.
+              Спасибо!
+              #[br]
+              Ваша заявка отправлена.
+            p.modal__success-text.
+              Наш менеджер свяжется с&nbsp;вами
+              в&nbsp;течение одного рабочего дня.
+            button.button(type="button" data-dismiss='modal' aria-label="Закрыть") Закрыть
+

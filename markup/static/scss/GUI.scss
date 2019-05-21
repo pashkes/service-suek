@@ -1,0 +1,158 @@
+// GUI stylies of the project
+// For example, styles of the links, buttons and so on.
+.button {
+  display: inline-flex;
+  justify-content: center;
+  vertical-align: top;
+  width: 100%;
+  padding: 14px 26px;
+  border: none;
+  background-color: $accent;
+  color: #fff;
+  font-size: 11px;
+  text-transform: uppercase;
+  line-height: 1.18;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  transition: $transition-base;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #636466;
+  }
+
+  &:focus {
+    background-color: darken(#636466, 5%);
+  }
+}
+
+.close-btn {
+  display: block;
+  width: 26px;
+  height: 26px;
+  right: 0;
+  top: 0;
+  border: none;
+  background: transparent url("__static__general/across.svg") 0 0 no-repeat;
+  background-size: 26px auto;
+}
+
+.form {
+  &__label {
+    display: block;
+    margin-bottom: 4px;
+    color: rgba(0, 0, 0, 0.5);
+    line-height: inherit;
+  }
+
+  &__field-wrapper {
+    margin-bottom: 10px;
+
+    @include media-breakpoint-up(md) {
+      margin-bottom: 18px;
+    }
+  }
+
+  &__field,
+  &__textarea {
+    display: block;
+    width: 100%;
+    padding: 11px 16px;
+    font-size: inherit;
+    line-height: inherit;
+    border: 1px solid #999999;
+    box-shadow: none;
+    transition: $transition-base;
+
+    &:focus {
+      outline: none;
+      border-color: $accent;
+    }
+  }
+
+  &__textarea {
+    min-height: 104px;
+    resize: none;
+  }
+
+  &__footer {
+    padding-top: 14px;
+    @include media-breakpoint-up(md) {
+      padding-top: 32px;
+    }
+  }
+
+  &__agreement {
+    margin-bottom: 0;
+    font-size: 12px;
+    line-height: 1.33;
+    color: rgba(0, 0, 0, 0.5);
+  }
+
+  &__submit {
+    margin-bottom: 18px;
+
+    @include media-breakpoint-up(md) {
+      margin-bottom: 32px;
+    }
+  }
+}
+
+.h2 {
+  position: relative;
+  display: block;
+  margin-bottom: 24px;
+  padding-bottom: 10px;
+  font-size: 18px;
+  line-height: 22/18;
+  letter-spacing: 0.02em;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 40px;
+    transform: translateX(-50%);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.25);
+  }
+}
+
+.slick-dots {
+  display: flex;
+  margin-bottom: 0;
+  padding-left: 0;
+  padding-top: 12px;
+  justify-content: center;
+  list-style-type: none;
+  li.slick-active button::before {
+    background-color: $accent;
+  }
+  button {
+    position:relative;
+    border: none;
+    font-size: 0;
+    width: 15px;
+    height: 15px;
+    background-color: transparent;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background-color: rgba(0, 0, 0, 0.25);
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+.d-flex {
+  display: flex;
+  flex-direction: column;
+}

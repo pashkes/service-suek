@@ -1,0 +1,27 @@
+mixin order-modal()
+  .modal.modal--order.fade(tabindex='-1' role='dialog' aria-labelledby='order-title' aria-hidden='true' id="order-modal")
+    .modal-dialog(role='document')
+      .modal__content.modal-content
+        .modal__header
+          button.modal__close.close-btn(type='button', data-dismiss='modal' aria-label="Закрыть")
+          span#order-title.modal__title Отправить заявку
+        .modal__body
+          form(action="./" method="post").form#order-form
+            .form__field-wrapper
+              label(for="order-form-full-name").form__label ФИО *
+              input(required name="full-name").form__field#order-form-full-name
+            .form__field-wrapper
+              label(for="order-form-email").form__label Электронная почта *
+              input(type="email" name="email" required).form__field#order-form-email
+            .form__field-wrapper
+              label(for="order-form-tel").form__label Контактный номер телефона *
+              input(type="tel" required).form__field#order-form-tel
+            .form__field-wrapper
+              label(for="order-form-message").form__label Текст сообщения
+              textarea.form__textarea#order-form-message
+            .form__footer
+              button.form__submit.button(type='submit') Отправить заявку
+              p.form__agreement.
+                Нажимая кнопку &laquo;Отправить заявку&raquo;. Я&nbsp;даю свое согласие
+                на&nbsp;обработку, использование и&nbsp;распространение моих
+                персональных данных в&nbsp;соответствии с&nbsp;законодательством&nbsp;РФ

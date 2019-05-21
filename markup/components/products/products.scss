@@ -1,0 +1,160 @@
+.products {
+  padding-top: 18px;
+  padding-bottom: 18px;
+
+  @include media-breakpoint-up(md) {
+    padding-top: 22px;
+    padding-bottom: 22px;
+  }
+
+  @include media-breakpoint-up(xl) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  &__slider-wrapper {
+    overflow: hidden;
+
+    .container {
+      @include media-breakpoint-up(md) {
+        max-width: 100%;
+        margin-right: 0;
+        padding-right: 0;
+        margin-left: calc((100vw - 768px) / 2);
+      }
+
+      @include media-breakpoint-up(lg) {
+        margin-left: calc((100vw - 960px) / 2);
+      }
+
+      @include media-breakpoint-up(xl) {
+        max-width: 1216px;
+        margin-right: auto;
+        margin-left: auto;
+
+        padding-right: 32px;
+      }
+    }
+  }
+
+  &__inner {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+    @include media-breakpoint-up(xl) {
+      padding-bottom: 62px;
+    }
+  }
+
+  &__slider {
+    margin: 0;
+    overflow: hidden;
+
+    @include media-breakpoint-up(xl) {
+      margin-right: -16px;
+      margin-left: -16px;
+      border-bottom: none;
+      max-height: 424px;
+      transition: $transition-collapse;
+    }
+  }
+
+  .slick-list {
+    margin-right: -16px;
+    margin-left: -16px;
+  }
+
+  &__slide {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    @include media-breakpoint-up(md) {
+      width: 274px;
+    }
+
+    @include media-breakpoint-up(xl) {
+      width: auto;
+      height: 100%;
+      padding-bottom: 32px;
+    }
+  }
+
+  &__photo {
+    height: 272px;
+
+    @include media-breakpoint-up(md) {
+      height: 264px;
+    }
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  &__body {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 18px 24px 20px;
+    border: 1px solid #E6E6E6;
+    border-top: none;
+  }
+
+  &__name {
+    max-width: 100%;
+    margin-bottom: 10px;
+    font-weight: 400;
+
+    a {
+      display: block;
+    }
+  }
+
+  &__plant-name {
+    max-width: 100%;
+    color: #939393;
+  }
+
+  &__footer {
+    display: none;
+    text-align: center;
+    @include media-breakpoint-up(xl) {
+      display: block;
+    }
+  }
+
+  .slick-dots {
+    padding-bottom: 20px;
+  }
+
+  &__show-more {
+    position: relative;
+    display: inline;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    text-decoration: none;
+    line-height: 1.57;
+    border-bottom: 1px dashed rgba(#9DA426, .6);
+    transition: $transition-base;
+
+    &:hover {
+      border-bottom-color: transparent;
+    }
+  }
+
+  .slick-track {
+    display: flex;
+  }
+
+  .slick-slide {
+    display: flex;
+    height: auto;
+    @include media-breakpoint-up(xl) {
+      margin-right: 0;
+    }
+  }
+}

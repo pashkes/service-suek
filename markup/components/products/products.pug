@@ -1,0 +1,115 @@
+
+mixin products(data)
+  section.products#products
+    .container
+      h2.products__title.h2 продукция
+    .products__slider-wrapper
+      .container
+        .products__inner
+          .products__slider.js-products-slider.row
+            div.col-auto.col-xl-3
+              .products__slide
+                .products__photo
+                  img(src="__static__img/content/product-1.jpg" srcset="__static__img/content/product-1@2x.jpg 2x" width="264" height="264" alt="Автономная мобильная мачта освещения АММО Люкс АММО-Г (д)-СП-960/6 УХЛ1" loading="lazy")
+                .products__body
+                  h3.products__name
+                    a(href="#" data-toggle="modal" data-target="#product-modal") Автономная мобильная мачта освещения АММО Люкс АММО-Г (д)-СП-960/6&nbsp;УХЛ1
+                  span.products__plant-name ООО &laquo;СУЭК-Хакасия&raquo; ПЕ&nbsp;Энергоуправление
+            div.col-auto.col-xl-3
+              .products__slide
+                .products__photo
+                  img(src="__static__img/content/product-2.jpg" srcset="__static__img/content/product-2@2x.jpg 2x" width="264" height="264" alt="Автономная опора освещения «АООСХ-30 … 60Вт-400/200-IP65-УХЛ1" loading="lazy")
+                .products__body
+                  h3.products__name
+                    a(href="#" data-toggle="modal" data-target="#product-modal") Автономная опора освещения &quot;АООСХ-30 ... 60Вт-400/200-IP65-УХЛ1
+                  span.products__plant-name ООО &laquo;СУЭК-Хакасия&raquo; ПЕ&nbsp;Энергоуправление
+            div.col-auto.col-xl-3
+              .products__slide
+                .products__photo
+                  img(src="__static__img/content/product-3.jpg" srcset="__static__img/content/product-3@2x.jpg 2x" width="264" height="264" alt="Монорельсовая подвесная дорога МПД-155, Стрелочный перевод ПСПДП М200" loading="lazy")
+                .products__body
+                  h3.products__name
+                    a(href="#" data-toggle="modal" data-target="#product-modal") Монорельсовая подвесная дорога МПД-155, Стрелочный перевод ПСПДП М200
+                  span.products__plant-name АО&nbsp;&laquo;СУЭК-Кузбасс&raquo; ПЕ&nbsp;Спецналадка
+            div.col-auto.col-xl-3
+              .products__slide
+                .products__photo
+                  img(src="__static__img/content/product-4.jpg" srcset="__static__img/content/product-4@2x.jpg 2x" width="264" height="264" alt="Напочвенная дорога НЗД-900, НРД-900" loading="lazy")
+                .products__body
+                  h3.products__name
+                    a(href="#" data-toggle="modal" data-target="#product-modal") Напочвенная дорога НЗД-900, НРД-900
+                  span.products__plant-name АО&nbsp;&laquo;СУЭК-Кузбасс&raquo; ПЕ&nbsp;Спецналадка
+            div.col-auto.col-xl-3
+              .products__slide
+                .products__photo
+                  img(src="__static__img/content/product-1.jpg" srcset="__static__img/content/product-1@2x.jpg 2x" width="264" height="264" alt="Автономная мобильная мачта освещения АММО Люкс АММО-Г (д)-СП-960/6 УХЛ1" loading="lazy")
+                .products__body
+                  h3.products__name
+                    a(href="#" data-toggle="modal" data-target="#product-modal") Автономная мобильная мачта освещения АММО Люкс АММО-Г (д)-СП-960/6&nbsp;УХЛ1
+                  span.products__plant-name ООО &laquo;СУЭК-Хакасия&raquo; ПЕ&nbsp;Энергоуправление
+            div.col-auto.col-xl-3
+              .products__slide
+                .products__photo
+                  img(src="__static__img/content/product-2.jpg" srcset="__static__img/content/product-2@2x.jpg 2x" width="264" height="264" alt="Автономная опора освещения «АООСХ-30 … 60Вт-400/200-IP65-УХЛ1" loading="lazy")
+                .products__body
+                  h3.products__name
+                    a(href="#" data-toggle="modal" data-target="#product-modal") Автономная опора освещения &quot;АООСХ-30 ... 60Вт-400/200-IP65-УХЛ1
+                  span.products__plant-name ООО &laquo;СУЭК-Хакасия&raquo; ПЕ&nbsp;Энергоуправление
+            div.col-auto.col-xl-3
+              .products__slide
+                .products__photo
+                  img(src="__static__img/content/product-3.jpg" srcset="__static__img/content/product-3@2x.jpg 2x" width="264" height="264" alt="Монорельсовая подвесная дорога МПД-155, Стрелочный перевод ПСПДП М200" loading="lazy")
+                .products__body
+                  h3.products__name
+                    a(href="#" data-toggle="modal" data-target="#product-modal") Монорельсовая подвесная дорога МПД-155, Стрелочный перевод ПСПДП М200
+                  span.products__plant-name АО&nbsp;&laquo;СУЭК-Кузбасс&raquo; ПЕ&nbsp;Спецналадка
+            div.col-auto.col-xl-3
+              .products__slide
+                .products__photo
+                  img(src="__static__img/content/product-4.jpg" srcset="__static__img/content/product-4@2x.jpg 2x" width="264" height="264" alt="Напочвенная дорога НЗД-900, НРД-900" loading="lazy")
+                .products__body
+                  h3.products__name
+                    a(href="#" data-toggle="modal" data-target="#product-modal") Напочвенная дорога НЗД-900, НРД-900
+                  span.products__plant-name АО&nbsp;&laquo;СУЭК-Кузбасс&raquo; ПЕ&nbsp;Спецналадка
+            div.col-auto.col-xl-3
+              .products__slide
+                .products__photo
+                  img(src="__static__img/content/product-1.jpg" srcset="__static__img/content/product-1@2x.jpg 2x" width="264" height="264" alt="Автономная мобильная мачта освещения АММО Люкс АММО-Г (д)-СП-960/6 УХЛ1" loading="lazy")
+                .products__body
+                  h3.products__name
+                    a(href="#" data-toggle="modal" data-target="#product-modal") Автономная мобильная мачта освещения АММО Люкс АММО-Г (д)-СП-960/6&nbsp;УХЛ1
+                  span.products__plant-name ООО &laquo;СУЭК-Хакасия&raquo; ПЕ&nbsp;Энергоуправление
+            div.col-auto.col-xl-3
+              .products__slide
+                .products__photo
+                  img(src="__static__img/content/product-2.jpg" srcset="__static__img/content/product-2@2x.jpg 2x" width="264" height="264" alt="Автономная опора освещения «АООСХ-30 … 60Вт-400/200-IP65-УХЛ1" loading="lazy")
+                .products__body
+                  h3.products__name
+                    a(href="#" data-toggle="modal" data-target="#product-modal") Автономная опора освещения &quot;АООСХ-30 ... 60Вт-400/200-IP65-УХЛ1
+                  span.products__plant-name ООО &laquo;СУЭК-Хакасия&raquo; ПЕ&nbsp;Энергоуправление
+            div.col-auto.col-xl-3
+              .products__slide
+                .products__photo
+                  img(src="__static__img/content/product-3.jpg" srcset="__static__img/content/product-3@2x.jpg 2x" width="264" height="264" alt="Монорельсовая подвесная дорога МПД-155, Стрелочный перевод ПСПДП М200" loading="lazy")
+                .products__body
+                  h3.products__name
+                    a(href="#" data-toggle="modal" data-target="#product-modal") Монорельсовая подвесная дорога МПД-155, Стрелочный перевод ПСПДП М200
+                  span.products__plant-name АО&nbsp;&laquo;СУЭК-Кузбасс&raquo; ПЕ&nbsp;Спецналадка
+            div.col-auto.col-xl-3
+              .products__slide
+                .products__photo
+                  img(src="__static__img/content/product-4.jpg" srcset="__static__img/content/product-4@2x.jpg 2x" width="264" height="264" alt="Напочвенная дорога НЗД-900, НРД-900" loading="lazy")
+                .products__body
+                  h3.products__name
+                    a(href="#" data-toggle="modal" data-target="#product-modal") Напочвенная дорога НЗД-900, НРД-900
+                  span.products__plant-name АО&nbsp;&laquo;СУЭК-Кузбасс&raquo; ПЕ&nbsp;Спецналадка
+            div.col-auto.col-xl-3
+              .products__slide
+                .products__photo
+                  img(src="__static__img/content/product-2.jpg" srcset="__static__img/content/product-2@2x.jpg 2x" width="264" height="264" alt="Автономная опора освещения «АООСХ-30 … 60Вт-400/200-IP65-УХЛ1" loading="lazy")
+                .products__body
+                  h3.products__name
+                    a(href="#" data-toggle="modal" data-target="#product-modal") Автономная опора освещения &quot;АООСХ-30 ... 60Вт-400/200-IP65-УХЛ1
+                  span.products__plant-name ООО &laquo;СУЭК-Хакасия&raquo; ПЕ&nbsp;Энергоуправление
+          .products__footer
+            a(href="#" aria-pressed="false" role="button" aria-label="Показать остальные продукты").products__show-more.js-show-more Показать еще 9

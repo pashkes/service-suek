@@ -1,0 +1,94 @@
+mixin product-modal(data)
+  .modal.modal--product.fade(tabindex='-1' role='dialog' aria-labelledby='product-title-1' aria-hidden='true' id="product-modal")
+    .modal-dialog(role='document')
+      .modal__content.modal-content
+        .product-info
+          .modal__header
+            button.modal__close.close-btn(type='button', data-dismiss='modal' aria-label="Закрыть")
+            h2#product-title-1.product-info__title Автономная мобильная мачта освещения АММО #[br]Люкс АММО-Г (д)-СП-960/6&nbsp;УХЛ1
+          .modal__body
+            span.product-info__plant-name ООО &laquo;СУЭК-Хакасия&raquo; ПЕ&nbsp;Энергоуправление
+            .product-info__slider.js-modal-slider
+              div
+                .product-info__slide
+                  img(src="__static__img/content/product-photo-1.jpg" srcset="__static__img/content/product-photo-1@2x.jpg 2x" width="197" height="194" alt="фото-1 продукта")
+              div
+                .product-info__slide
+                  img(src="__static__img/content/product-photo-2.jpg" srcset="__static__img/content/product-photo-2@2x.jpg 2x" width="255" height="187" alt="фото-2 продукта")
+            div(role="table").product-info__table
+              div(role="row").row.no-gutters.product-info__row
+                div(role="columnheader").col-md-auto
+                  .product-info__th Назначение продукции
+                div(role="cell").col-md
+                  .product-info__td.
+                    Автономные мобильные мачты освещения используются для оперативного обеспечения освещения больших территорий в&nbsp;тёмное время суток, или в&nbsp;условиях недостаточной видимости, где отсутствуют стационарные электрические сети.
+                    Сфера применения: строительство (в&nbsp;т.ч. дорожное), ЖКХ, нефтяная и&nbsp;горнодобывающая промышленности, Вооружённые Силы, спасательные организации, силовые структуры МВД и&nbsp;т.д.
+              div(role="row").row.no-gutters.product-info__row
+                div(role="columnheader").col-md-auto
+                  .product-info__th Описание продукции
+                div(role="cell").col-md
+                  .product-info__td.
+                    Мобильное осветительное оборудование, которое с&nbsp;помощью использования панелей на&nbsp;монокристаллическом кремнии позволяет преобразовывать солнечную энергию в&nbsp;электрическую, накапливая энергию в&nbsp;аккумуляторах, а&nbsp;затем использовать накопленную энергию для освещения.
+                    Генераторная установка в&nbsp;составе мачты обеспечивает дополнительную автономность и&nbsp;надежность установки, а&nbsp;также резервный источник питания осветительного оборудования.
+
+              div(role="row").row.no-gutters.product-info__row
+                div(role="columnheader").col-md-auto
+                  .product-info__th Конкурентные преимущества
+                div(role="cell").col-md
+                  .product-info__td
+                    ul
+                      li &mdash;&nbsp;новый экологичный продукт
+                      li &mdash;&nbsp;использование возобновляемых источников энергии
+                      li &mdash;&nbsp;строгий контроль качества
+                      li &mdash;&nbsp;индивидуальное исполнение по&nbsp;ТЗ заказчика
+                      li &mdash;&nbsp;большой спектр дополнительных опции
+
+              div(role="row").row.no-gutters.product-info__row
+                div(role="columnheader").col-md-auto
+                  .product-info__th Описание продукции
+                div(role="cell").col-md
+                  .product-info__td.
+                    Мобильное осветительное оборудование, которое с&nbsp;помощью использования панелей на&nbsp;монокристаллическом кремнии позволяет преобразовывать солнечную энергию в&nbsp;электрическую, накапливая энергию в&nbsp;аккумуляторах,
+                    а&nbsp;затем использовать накопленную энергию для освещения.
+                    Генераторная установка в&nbsp;составе мачты обеспечивает дополнительную автономность и&nbsp;надежность установки, а&nbsp;также резервный источник питания осветительного оборудования.
+              div(role="row").row.no-gutters.product-info__row
+                div(role="columnheader").col-md-auto
+                  .product-info__th Конкурентные преимущества
+                div(role="cell").col-md
+                  .product-info__td
+                    ul
+                      li &mdash;&nbsp;новый экологичный продукт
+                      li &mdash;&nbsp;использование возобновляемых источников энергии
+                      li &mdash;&nbsp;строгий контроль качества
+                      li &mdash;&nbsp;индивидуальное исполнение по&nbsp;ТЗ заказчика
+                      li &mdash;&nbsp;большой спектр дополнительных опции
+
+            h3.product-info__table-name Основные технические характеристики АММО Люкс.
+            div(role="table").product-info__table.characteristics
+              div(role="row").row.no-gutters.product-info__row
+                div(role="columnheader").col-md-auto
+                  .product-info__th Номинальная мощность осветительной установки, Вт
+                div(role="cell").col-md
+                  .product-info__td 960
+              div(role="row").row.no-gutters.product-info__row
+                div(role="columnheader").col-md-auto
+                  .product-info__th Номинальное напряжение, В
+                div(role="cell").col-md
+                  .product-info__td 220
+              div(role="row").row.no-gutters.product-info__row
+                div(role="columnheader").col-md-auto
+                  .product-info__th Площадь освещаемой поверхности при среднем показателе освещенности 20&nbsp;люкс/м2, м2
+                div(role="cell").col-md
+                  .product-info__td 4000
+              div(role="row").row.no-gutters.product-info__row
+                div(role="columnheader").col-md-auto
+                  .product-info__th Механический подъем мачты на&nbsp;высоту&nbsp;до, мм
+                div(role="cell").col-md
+                  .product-info__td 10 000
+              div(role="row").row.no-gutters.product-info__row
+                div(role="columnheader").col-md-auto
+                  .product-info__th Вращение мачты вокруг оси
+                div(role="cell").col-md
+                  .product-info__td 180 градусов
+          .modal__footer
+            button(type="button").product-info__button.button.js-open-form-order отправить заявку

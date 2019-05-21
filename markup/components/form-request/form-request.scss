@@ -1,0 +1,47 @@
+.form-request {
+  border-bottom: 24px solid #4C4C4C;
+  padding-top: 38px;
+  padding-bottom: 46px;
+  background-color: #f3f3f3;
+
+  &__title {
+    margin-bottom: 18px;
+    @include media-breakpoint-up(md) {
+      margin-bottom: 12px;
+    }
+
+    @include media-breakpoint-up(xl) {
+
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    padding-bottom: 94px;
+  }
+
+  @include media-breakpoint-up(xl) {
+    padding-top: 62px;
+  }
+
+  &__wrapper {
+    max-width: 576px;
+    margin-right: auto;
+    margin-left: auto;
+
+    @include media-breakpoint-up(xl) {
+      max-width: 560px;
+    }
+  }
+
+  .form__footer {
+    padding-top: 22px;
+
+    @include media-breakpoint-up(md) {
+      padding-top: 14px;
+    }
+  }
+
+  .form__agreement {
+    text-align: center;
+  }
+}

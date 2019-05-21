@@ -1,0 +1,104 @@
+.plants {
+  padding-top: 32px;
+  padding-bottom: 18px;
+
+  @include media-breakpoint-up(md) {
+    padding-bottom: 22px;
+    margin-top: -62px;
+  }
+
+  &__list {
+    border: 1px solid #E6E6E6;
+
+    @include media-breakpoint-up(xl) {
+      border-bottom: none;
+    }
+  }
+
+  &__col {
+    border-bottom: 1px solid #E6E6E6;
+    background-color: #fff;
+
+    @include media-breakpoint-up(md) {
+      border-right: 1px solid #E6E6E6;
+    }
+
+    &:last-child {
+      border-bottom: none;
+
+      @include media-breakpoint-up(xl) {
+        border-bottom: 1px solid #E6E6E6;
+      }
+    }
+
+    &:nth-last-child(2) {
+      @include media-breakpoint-up(md) {
+        border-bottom: none;
+      }
+      @include media-breakpoint-up(xl) {
+        border-bottom: 1px solid #E6E6E6;
+      }
+    }
+
+    &:nth-child(4n) {
+      @include media-breakpoint-up(md) {
+        border-right: none;
+      }
+      @include media-breakpoint-up(xl) {
+        border-right: 1px solid #E6E6E6;
+      }
+    }
+    &:nth-child(5n) {
+      @include media-breakpoint-up(xl) {
+        border-right: none;
+      }
+    }
+    &:last-child {
+      @include media-breakpoint-up(md) {
+        border-right: none;
+      }
+      @include media-breakpoint-up(xl) {
+
+      }
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 138px;
+    padding: 0 16px 28px;
+
+    @include media-breakpoint-up(xl) {
+      min-height: 168px;
+    }
+    @include media-breakpoint-up(xl) {
+      width: 229px;
+    }
+  }
+
+  &__logo {
+    min-height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: stretch;
+
+    @include media-breakpoint-up(md) {
+      min-height: 104px;
+    }
+  }
+
+  &__name {
+    max-width: 100%;
+    color: $accent;
+    font-size: 13px;
+    line-height: 1.38;
+    text-align: center;
+    text-decoration: underline;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}

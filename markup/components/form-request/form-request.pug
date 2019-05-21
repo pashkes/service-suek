@@ -1,0 +1,26 @@
+mixin form-request(data)
+  section.form-request
+    .container
+      h2.form-request__title.h2 Оставить заявку
+      form(action="./" method="post").form-request__wrapper.form#request-form
+        .form__field-wrapper
+          label(for="request-form-full-name").form__label ФИО *
+          input(required name="full-name").form__field#request-form-full-name
+        .row
+          .col-md-6
+            .form__field-wrapper
+              label(for="request-form-email").form__label Электронная почта *
+              input(type="email" name="email" required).form__field#request-form-email
+          .col-md-6
+            .form__field-wrapper
+              label(for="request-form-tel").form__label Контактный номер телефона *
+              input(type="tel" required).form__field#request-form-tel
+        .form__field-wrapper
+          label(for="request-form-message").form__label Текст сообщения
+          textarea.form__textarea#request-form-message
+        .form__footer
+          button.form__submit.button(type='submit') Отправить заявку
+          p.form__agreement.
+            Нажимая кнопку &laquo;Отправить заявку&raquo;. Я&nbsp;даю свое согласие
+            на&nbsp;обработку, использование и&nbsp;распространение моих
+            персональных данных в&nbsp;соответствии с&nbsp;законодательством&nbsp;РФ

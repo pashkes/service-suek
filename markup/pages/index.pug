@@ -1,0 +1,16 @@
+extends _template
+block main
+  include ../components/plants/plants
+  include ../components/products/products
+  include ../components/product-modal/product-modal
+  include ../components/services/services
+  include ../components/form-request/form-request
+
+  +plants()
+  +products()
+  +services()
+  +form-request()
+block modals
+  +order-modal()
+  +order-success-modal()
+  +product-modal()
