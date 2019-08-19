@@ -28,7 +28,8 @@
     "download": "4.4.3",
     "eslint": "^5.7.0",
     "eslint-loader": "^2.1.1",
-    "gulp": "^3.9.1",
+    "gh-pages": "^2.1.1",
+    "gulp": "3.9.1",
     "gulp-babel": "^8.0.0",
     "gulp-cached": "^1.1.1",
     "gulp-changed": "^3.2.0",
@@ -80,20 +81,15 @@
     "fsevents": "^1.1.3"
   },
   "scripts": {
-    "install": "node ./tars/helpers/install-additional-deps.js",
     "lint": "eslint webpack.config.js tars/*.js tars/tasks/**/*.js tars/watchers/**/*.js tars/helpers/**/*.js gulpfile.js --rule 'valid-jsdoc: [0, {}]'",
-    "start": "gulp dev --lr",
-    "build": "gulp build -m"
+    "start": "tars dev -l",
+    "build": "tars build -r",
+    "deploy": "npm run build && gh-pages -d build"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/tars/tars.git"
+    "url": "https://github.com/pashkes/service-suek.git"
   },
   "author": "Pavel Tarasenko",
-  "license": "MIT",
-  "keywords": [
-    "gulp",
-    "makeup",
-    "markup"
-  ]
+  "license": "MIT"
 }
